@@ -22,8 +22,45 @@
 
 # print(a + b) # according to algebra , we should have got x + y , but we got xy instead 
 
-from oops_proj import chatbook
 
-user1 = chatbook()    # creating an object of class chatbook
+# creating an object of class chatbook
+# user1 = chatbook()
 
 # This is modularity in OOPS, we can create multiple objects of the same class and they will have their own attributes and methods.
+
+# function vs method below 
+# lst = [1,2,3]
+# this is how  we call len function to get the length of a list
+# a1 = len(lst)
+# print(f"Length of List is {a1}")
+
+# from oops_proj import chatbook
+# user1 = chatbook()
+# print(user1._chatbook__name)
+# print(user1.__name)
+
+#  this is how we call a method sendmsg() of class chatbook using the object user1
+# user1.sendmsg()
+
+#  Checking getter and setter methods 
+
+# print(user1.get_name())
+# user1.set_name("Agent X")
+# getting the name after setting it using setter method
+# print(user1.get_name())
+
+
+# Static method implementation
+
+from oops_proj import chatbook
+user1 = chatbook()
+print(user1.id)
+
+# Using static method directly from class rather than object 
+chatbook.set_id(10)
+
+user2 = chatbook()
+print(user2.id)
+
+user3 = chatbook()
+print(user3.id)

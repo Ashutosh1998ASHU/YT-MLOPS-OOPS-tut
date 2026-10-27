@@ -10,7 +10,20 @@
     -> easy to collab 
 
 5. End to end Project (Chatbook Class)
+    -> Function vs Method
+    -> magic method vs dunder method
+    -> self
+    
     -> encapsulation
     -> getter and setter
     -> static method
-    
+
+
+
+
+Additional Insights :- 
+
+__init__ method is a special method in Python classes. 
+It is called a constructor because it is automatically invoked when an object of the class is created. 
+The purpose of the __init__ method is to initialize the attributes of the class and set up any necessary state for the object.
+__init__ method is called automatically when we create an object of the class

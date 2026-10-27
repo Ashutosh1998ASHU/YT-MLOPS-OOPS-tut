@@ -1,9 +1,36 @@
+# initialize a class called chatbook
 class chatbook:
+    # special method/magic method/dunder method - constructor of the class
+    #  __init__ method is a special method in Python classes. 
+    #  __init__ method is called automatically when we create an object of the class
+    
+    __user_id = 1
+
     def __init__(self):
+        self.id = chatbook.__user_id
+        chatbook.__user_id += 1
+        self.__name = "Default User"
+        # self.user_id = 0
+        # self.user_id +=1 
         self.username = ''
         self.password = ''
         self.loggedin = False
-        self.menu()
+        # self.menu()  
+        #  commenting self.menu() as we will be calling methods manually
+
+    @staticmethod
+    def get_id(): 
+        return chatbook.__user_id
+
+    @staticmethod
+    def set_id(val):
+        chatbook.__user_id = val
+
+    def get_name(self):
+        return self.__name
+
+    def set_name(self, value):
+        self.__name = value
 
     def menu(self):
         user_input = input("""Welcome to Chatbook !! How would you like to proceed?
@@ -70,5 +97,5 @@ class chatbook:
         self.menu() 
 
 
-obj = chatbook()
+# obj = chatbook()
               

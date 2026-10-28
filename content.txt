@@ -13,11 +13,23 @@
     -> Function vs Method
     -> magic method vs dunder method
     -> self
-    
     -> encapsulation
     -> getter and setter
     -> static method
 
+6. Inheritance 
+    -> Inheritance code example
+    -> Why inheritance is needed? (Code reusability, parent has no access to child class)
+    -> What gets inherited? Constructor, Non private attributes, Non private methods 
+    -> constructor overloading & method overloading
+    -> Super keyword(can be used only inside class, can not access variables/attributes, used only inside child class)
+    
+    -> Types of inheritance 
+        1. Single Inheritance
+        2. Multilevel Inheritance
+        3. Hierarchical Inheritance
+        4. Multiple <Diamond Problem> Inheritance
+        5. Hybrid Inheritance
 
 
 
